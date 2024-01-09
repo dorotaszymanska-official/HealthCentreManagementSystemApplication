@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Patient register page</title>
+</head>
+<body>
+<h1>Register</h1>
+<form action="/register" method="post">
+
+  <label>Enter your login:</label>
+  <input type="text" th:field="${patientDto.login}">
+  <br>
+  <label>Enter password:</label>
+  <input type="password" th:field="${patientDto.password}">
+  <br>
+  <label>Enter your PESEL number:</label>
+  <input type="text" th:field="${patientDto.pesel}">
+  <br>
+  <label>Enter your name:</label>
+  <input type="text" th:field="${patientDto.name}">
+  <br>
+  <label>Enter your surname:</label>
+  <input type="text" th:field="${patientDto.surname}">
+  <br>
+  <label>Enter your address:</label>
+  <input type="text" th:field="${patientDto.address}">
+  <br>
+  <label>Enter postcode:</label>
+  <input type="text" th:field="${patientDto.postcode}">
+  <br>
+  <button type="submit">Register!</button>
+</form>
+</body>
+</html>
