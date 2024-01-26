@@ -1,21 +1,118 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Main page</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-<header class="mdl-layout__header">
-    <div class="mdl-layout__header-row">
-        <span class="mdl-layout__title"> HEALTH SERVICES MANAGEMENT SYSTEM</span>
-        <div class="mdl-layout"></div>
-        <nav class="mdl-navigation">
-            <a class="mdl-navigation__link" href="/login">Log in</a>
-            <a class="mdl-navigation__link" href="/register">Register</a>
 
-        </nav>
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Medilab - Main page</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+     <!--Template Main CSS File-->
+    <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+<main id="main">
+    <div>
+     <nav>
+         <br>
+         <a href="/login">Login</a>
+         <br>
+         <br>
+         <a href="/register">Register</a>
+         <br>
+         <br>
+         <br>
+
+
+         <!--<a href="/console">Database</a>-->
+     </nav>
     </div>
-</header>
+
+     <!--======= Contact Section ======= -->
+    <section id="contact" class="contact">
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Contact</h2>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row mt-5">
+                        <div class="email">
+                            <h4>Email:</h4>
+                            <p>info@example.com</p>
+                        </div>
+                        <div class="phone">
+                            <h4>Call:</h4>
+                            <p>+1 5589 55488 55s</p>
+                        </div>
+
+                <div>
+                    <form action="" method="post" role="form" class="">
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <input type="text" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="col-md-6 form-group mt-3 mt-md-0">
+                                <input type="email" name="email" placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        <div class="form-group mt-3">
+                            <input type="text" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div>
+                            <textarea name="message" rows="5" placeholder="Message" required></textarea>
+                        </div>
+                        <div>
+                            <div class="loading">Loading</div>
+                            <div class="error-message"></div>
+                            <div class="sent-message">Your message has been sent. Thank you!</div>
+                        </div>
+                        <div class="text-center"><button type="submit">Send Message</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section> <!--End Contact Section -->
+
+</main><!-- End #main -->
+
+<!-- ======= Footer ======= -->
+<footer id="footer">
+
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="footer-newsletter">
+                    <h4>Join Our Newsletter</h4>
+                    <form action="" method="post">
+                        <input type="email" name="email"><input type="submit" value="Subscribe">
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div>
+
+        <div>
+            <div class="copyright">
+                &copy; Copyright <strong><span>Medilab</span></strong>. All Rights Reserved
+            </div>
+        </div>
+    </div>
+</footer><!-- End Footer -->
+
+<!-- Template Main JS File -->
+<script src="main.js"></script>
+
 </body>
 </html>

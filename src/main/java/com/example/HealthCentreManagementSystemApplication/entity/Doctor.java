@@ -36,7 +36,7 @@ public class Doctor {
     private LocalDate dateOfJoining;
 
     @OneToMany(mappedBy = "doctor")
-    private List<DoctorsAppointment> doctorsAppointments = new ArrayList<>();
+    private List<Appointment> appointments = new ArrayList<>();
 
     @OneToMany(mappedBy = "doctor")
     private List<Prescription> prescriptions = new ArrayList<>();

@@ -41,8 +41,8 @@ public class Prescription {
     private LocalDate dateOfIssue;
 
     @ManyToOne
-    @JoinColumn(name = "doctorsAppointment_id")
-    private DoctorsAppointment doctorsAppointment;
+    @JoinColumn(name = "appointment_id")
+    private Appointment appointment;
 
     private File file;
 }

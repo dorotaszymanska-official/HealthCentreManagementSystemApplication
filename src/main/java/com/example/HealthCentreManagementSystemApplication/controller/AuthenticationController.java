@@ -28,24 +28,12 @@ public class AuthenticationController {
         return mav;
     }
 
-    @GetMapping("/login")
+    /*@GetMapping("/login")
     public String getLoginPage(Model model) {
         return "login";
-    }
+    }*/
 
-//	@GetMapping("/main")
-//	public ModelAndView getMainPage() {
-//		ModelAndView modelAndView = new ModelAndView("main.html");
-//		return modelAndView;
-//	}
-
-//	 @RequestMapping("/main")
-//	 @ResponseBody
-//	 public String getLoginPage() {
-//	    return "main";
-//	 }
-
-    @GetMapping("/logout")
+    @GetMapping("/index")
     public RedirectView getLogoutPage() {
         RedirectView redirectView = new RedirectView();
         redirectView.setUrl("/index"); // Adres URL strony głównej
@@ -61,10 +49,10 @@ public class AuthenticationController {
         return modelAndView;
     }
     @PostMapping("/register")
-    public ModelAndView createCustomer(@ModelAttribute("patientDto") PatientDto patientDto) {
+    public ModelAndView createPatient(@ModelAttribute("patientDto") PatientDto patientDto) {
         System.out.println("!!!!! " + patientDto + " !!!!!");
         patientService.addPatient(patientDto);
-        return new ModelAndView("redirect:/index");
+        return new ModelAndView("appointment.html");
     }
 
 

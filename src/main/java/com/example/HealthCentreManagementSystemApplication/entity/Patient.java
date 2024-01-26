@@ -47,7 +47,7 @@ public class Patient{
     private List<Prescription> prescriptions = new ArrayList<>();
 
     @OneToMany(mappedBy = "patient")
-    private List<DoctorsAppointment> doctorsAppointments = new ArrayList<>();
+    private List<Appointment> appointments = new ArrayList<>();
 
     public Patient(long id, String login, String password, String pesel, String name, String surname, String address,
                    String postcode, String city) {

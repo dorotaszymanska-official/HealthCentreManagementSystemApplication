@@ -1,6 +1,7 @@
 package com.example.HealthCentreManagementSystemApplication.entity;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,8 +25,8 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity
-@Table(name = "doctors_appointment")
-public class DoctorsAppointment {
+@Table(name = "appointment")
+public class Appointment {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -39,8 +40,10 @@ public class DoctorsAppointment {
     @JoinColumn(name = "doctor_id")
     private Doctor doctor;
 
-    private LocalDateTime dateAndTimeOfAppointment;
+    private LocalDate dateOfAppointment;
 
-    @OneToMany(mappedBy = "doctorsAppointment")
+    private LocalTime timeOfAppointment;
+
+    @OneToMany(mappedBy = "appointment")
     private List<Prescription> prescriptions = new ArrayList<>();
 }

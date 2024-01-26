@@ -2,7 +2,7 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Patient register page</title>
+    <title>Register</title>
 </head>
 <body>
 <h1>Register</h1>
@@ -28,6 +28,9 @@
   <br>
   <label>Enter postcode:</label>
   <input type="text" th:field="${patientDto.postcode}">
+  <br>
+  <label>Enter city:</label>
+  <input type="text" th:field="${patientDto.city}">
   <br>
   <button type="submit">Register!</button>
 </form>
