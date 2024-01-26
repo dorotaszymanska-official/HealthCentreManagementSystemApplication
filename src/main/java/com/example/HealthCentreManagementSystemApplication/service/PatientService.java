@@ -29,5 +29,4 @@ public class PatientService {
         return patientMapper.mapToDtos(patients);
     }
 
-
 }

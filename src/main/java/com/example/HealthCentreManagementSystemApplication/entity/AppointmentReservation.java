@@ -14,7 +14,7 @@ import java.time.LocalTime;
 @Setter
 @Entity
 @Table(name = "appointments_reservation")
-public class AppointmentsReservation {
+public class AppointmentReservation {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
